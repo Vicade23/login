@@ -1,14 +1,9 @@
-const getD = JSON.parse(localStorage.getItem('yData'));
-console.log(getD);
-
-document.getElementById('form').addEventListener('submit', (eventValue) => {
+const getData = JSON.parse(localStorage.getItem('yData'));
+// export {const getD = JSON.parse(localStorage.getItem('yData'))};
+console.log(getData);
+document.getElementById('form1').addEventListener('submit', (eventValue) => {
     // eventValue.preventDefault();
 
-// function forms() {
-//     document.getElementById('form')
-//     eventValue.preventDefault();
-
-// }
 
 const text = document.getElementById('text').value;
 const email = document.getElementById('email').value;
@@ -18,9 +13,7 @@ const utext = document.getElementById('utext');
 const uemail = document.getElementById('uemail');
 const upassword = document.getElementById('upassword');
 
-// for (i = 0; something - 1; i++) {
-//     console.log(i)
-// }
+
 const yData = [
     text,
     email,
@@ -56,8 +49,4 @@ if (password === "") {
 else {
     upassword.innerHTML = '';
 }
-})
-
-document.getElementById('form2').addEventListener('submit', (eventValue) => {
-    
 })
